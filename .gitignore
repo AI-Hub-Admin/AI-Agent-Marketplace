@@ -1,0 +1,6 @@
+.DS_store
+*.DS_store
+/bak
+./bak
+run_ai_agent_marketplace.sh
+
