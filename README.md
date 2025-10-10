@@ -1,9 +1,10 @@
 # AI Agent Marketplace Index| AI Agent Directory to Host All Available AI Agents | OneKey AI Agent Router | Agent Moneytization
 
-[Github](https://github.com/AI-Agent-Hub/AI-Agent-Marketplace)|[Huggingface](https://huggingface.co/datasets/DeepNLP/AI-Agent-Marketplace-Index)|[Pypi](https://pypi.org/project/ai-agent-marketplace/) | [Open AI Agent Marketplace](https://www.deepnlp.org/store/ai-agent)
+[Github](https://github.com/AI-Agent-Hub/AI-Agent-Marketplace)|[Huggingface](https://huggingface.co/datasets/DeepNLP/AI-Agent-Marketplace-Index)|[Pypi](https://pypi.org/project/ai-agent-marketplace/) | [Open Source AI Agent Marketplace DeepNLP](https://www.deepnlp.org/store/ai-agent)
 
 This is the official github repo for pypi package ai_agent_marketplace [https://pypi.org/project/ai-agent-marketplace](https://pypi.org/project/ai-agent-marketplace).
-The repo Open AI Agent Marketplace and website [AI Agent Marketplace Store & Search Engine](http://www.deepnlp.org/store/ai-agent) aims to provides a public repo and index of more than 10K+ AI Agent information from 30+ categories in the communities, such as autonomous agent, chatbots, Computer and Mobile phone use agents, robotic agents, and various industries such as business, finance, law, medical or healthcare, etc. The directory are updated to websites from both public repo (github/huggingface) as well as AI Agent services in cloud service provider (Microsoft Azure AWS, Copilot, OpenAI Agent app Store GPT Store, Google Cloud, etc). 
+The repo Open Source AI Agent Marketplace and website [AI Agent Marketplace Store & Search Engine](http://www.deepnlp.org/store/ai-agent) aims to provides a public repo and index of more than 10K+ AI Agent information from 30+ categories in the communities, such as autonomous agent, chatbots, Computer and Mobile phone use agents, robotic agents, and various industries such as business, finance, law, medical or healthcare, etc. The directory are updated to websites from both public repo (github/huggingface) as well as AI Agent services in cloud service provider (Microsoft Azure AWS, Copilot, OpenAI Agent app Store GPT Store, Google Cloud, etc). 
+
 
 **AI Agent Marketplace Distribution By Category**<br>
 
@@ -28,7 +29,7 @@ graph LR
 4. **Traffic Tracking**: Traffic tracking service to your AI Agents, ranging from API calls from the OneKey Router,GitHub Stars,Google/Bing search engine rankings, 
 5. **Users Genunie Reviews & Discussion**: Users can sort the AI Agent meta by reviews, ratings and find good AI Agent of different categories. 
 6. **AI Agent Moneyterization**: Getting payment account for your AI Agent is not easy, we provides Stripe, Alipay, Credit card payment methods based on a unified credit charging system and and you can gain credits in your billing account from users' request. You can purchase datasets, call LLM and commercial MCPs (Google Maps, Google Search, etc) and withdraw. 
-7. **Dataset for Research**: We provide full snapshot of AI Agent Marketplace dataset periodically back to the community on [Huggingface](https://github.com/AI-Agent-Hub/AI-Agent-Marketplace), so researchers can track the growth.
+7. **Dataset for Research**: We provide full snapshot of AI Agent Marketplace dataset periodically back to the community on [Huggingface](https://huggingface.co/datasets/DeepNLP/AI-Agent-Marketplace-Index), so researchers can track the growth.
 
 
 **AI Agent Marketplace and Search Engine**<br>
@@ -227,15 +228,14 @@ Can you can find the popular stared Github projects such as:
 ![Taskweaver Agent Marketplace Tracking Github Star](https://github.com/AI-Agent-Hub/AI-Agent-Marketplace/blob/main/docs/image_task_weaver_microsoft.jpg)
 
 
-## API to Track AI Agent Traffic Data
+#### Dataset and API to Access the AI Agent
 
 ![AI Agent Index for tracking Daily Search Metric](https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_search_ranking_chart.jpg)
 
+|Snapshot| Dataset |
+| 2025-10 | https://huggingface.co/datasets/DeepNLP/AI-Agent-Marketplace-Index |
 
+## Contributing
 
-#### Contributing
-
-Please contribute to the AGENT.md to include links to your repo.
-
-
+Please contribute to the AGENT.md to include links and introduction to your repo.
 
