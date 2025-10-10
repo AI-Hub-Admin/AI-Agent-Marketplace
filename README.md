@@ -5,14 +5,11 @@
 This is the official github repo for pypi package ai_agent_marketplace [https://pypi.org/project/ai-agent-marketplace](https://pypi.org/project/ai-agent-marketplace).
 The repo Open AI Agent Marketplace and website [AI Agent Marketplace Store & Search Engine](http://www.deepnlp.org/store/ai-agent) aims to provides a public repo and index of more than 10K+ AI Agent information from 30+ categories in the communities, such as autonomous agent, chatbots, Computer and Mobile phone use agents, robotic agents, and various industries such as business, finance, law, medical or healthcare, etc. The directory are updated to websites from both public repo (github/huggingface) as well as AI Agent services in cloud service provider (Microsoft Azure AWS, Copilot, OpenAI Agent app Store GPT Store, Google Cloud, etc). 
 
-[Dataset on Huggingface](https://huggingface.co/datasets/DeepNLP/AI-Agent-Marketplace-Index)
-
-**AI Agent Marketplace AI Agent Distribution By Category**<br>
+**AI Agent Marketplace Distribution By Category**<br>
 
 <img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_agent_marketplace_distribution.jpg" style="height:400px;" alt="AI Agent Marketplace Category">
 
 We would like to help developers and end users within the lifecycle of AI agent development. From the registration, deployment, Agent router, API calling, metric/traffic tracking, and finally to the stage of moneyterization from your AI Agent. Anyone can submit their AI agents card information, code, APIs, pricing plans to the public registry, just like your submit a paper to arxiv.org and submit models to huggingface.co.
-
 
 ```mermaid
 
@@ -24,7 +21,6 @@ graph LR
 
 ```
 
-
 # Main Features
 1. **AI Agent Registry**: You can submit your AI Agent's meta to the [Official AI Agent Marketplace Registry](https://www.deepnlp.org/workspace/my_ai_services) directly on website or using various methods (python,nodejs, curl, etc). After submitting your AI Agent meta and approval, community will find your AI Agent in each categories. We also host available submission from various agent store or build in any infrastractures, such as OpenAI Apps SDK, Claude MCPs, etc. 
 2. **AI Agent Search Engine and Search API**: Users are able to search and explore your AI Agent through [AI Agent Search Engine](https://www.deepnlp.org/search/agent) and you can also access the AI Agent Meta Index through [Search API](https://www.deepnlp.org/doc/ai_agent_marketplace) and [MCP servers](https://github.com/AI-Agent-Hub/ai-agent-marketplace-index-mcp) also.
@@ -32,6 +28,7 @@ graph LR
 4. **Traffic Tracking**: Traffic tracking service to your AI Agents, ranging from API calls from the OneKey Router,GitHub Stars,Google/Bing search engine rankings, 
 5. **Users Genunie Reviews & Discussion**: Users can sort the AI Agent meta by reviews, ratings and find good AI Agent of different categories. 
 6. **AI Agent Moneyterization**: Getting payment account for your AI Agent is not easy, we provides Stripe, Alipay, Credit card payment methods based on a unified credit charging system and and you can gain credits in your billing account from users' request. You can purchase datasets, call LLM and commercial MCPs (Google Maps, Google Search, etc) and withdraw. 
+7. **Dataset for Research**: We provide full snapshot of AI Agent Marketplace dataset periodically back to the community on [Huggingface](https://github.com/AI-Agent-Hub/AI-Agent-Marketplace), so researchers can track the growth.
 
 
 **AI Agent Marketplace and Search Engine**<br>
@@ -64,7 +61,6 @@ graph LR
 
 List of Methods 
 
-
 | method | usage |
 | ---- | ---- | 
 | Website | Visit the [official AI Agent registry](https://www.deepnlp.org/workspace/my_ai_services) |
@@ -72,11 +68,13 @@ List of Methods
 | python | Install packages pip pakcage ai_agent_marketplace |
 | nodejs | TBD |
 
-
 ### Curl 
 
-Let's say you want to submit an MCP repo, we use the markitdown repo for example: https://github.com/microsoft/markitdown
-Get the Keys From [Keys Generation](https://www.deepnlp.org/workspace/keys) and generate `AI_AGENT_MARKETPLACE_ACCESS_KEY` as developer.
+Best suitable when you already put your AI Agent introduction on github and you can just curl to the registry.
+
+Let's say you want to submit an MCP github repo, we use the markitdown repo for example: https://github.com/microsoft/markitdown.
+
+Firstly, get the keys from [Keys Generation](https://www.deepnlp.org/workspace/keys) generate `AI_AGENT_MARKETPLACE_ACCESS_KEY` as developer.
 
 ```
 curl -X POST https://www.deepnlp.org/api/ai_agent_marketplace/registry -H "Content-Type: application/json" -d '{"github":"https://github.com/microsoft/markitdown", "access_key":"{AI_AGENT_MARKETPLACE_ACCESS_KEY}"}' 
@@ -148,21 +146,32 @@ search_ai_agent_traffic_data()
 
 ```
 
+For example, we use the AI Agent MCP server [Google Maps MCP Servers](https://www.deepnlp.org/store/mcp-server/map/pub-google-maps/google-maps) as example. 
 
-agent.json
+The unique_id should follow the same /{owerid}/{item-id} format
+
 ```
-
+{
+  "unique_id": "google-maps/google-maps",
+  "content_name": "Google Maps MCPs",
+  "content": "Google Maps MCPs provides Location Service to support various APIs..."  
+  "category": "Map",
+  "field": "MCP SERVER",
+  "subfield": "Map",
+  "content_tag_list": "official",
+  "website": "maps.google.com",
+  "content_tag_list": "maps,location"
+  "github": "https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps"
+}
 ```
-
 
 ### NodeJs
+TBD
 
 
 3. OneKey Agent Router
 
 Try Web App of Onekey [API Router Agent](https://agent.deepnlp.org/agent/mcp_tool_use)
-
-
 
 
 
@@ -227,4 +236,6 @@ Can you can find the popular stared Github projects such as:
 #### Contributing
 
 Please contribute to the AGENT.md to include links to your repo.
+
+
 
