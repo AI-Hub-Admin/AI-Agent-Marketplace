@@ -3,12 +3,12 @@
 [Github](https://github.com/AI-Agent-Hub/AI-Agent-Marketplace)|[Huggingface](https://huggingface.co/datasets/DeepNLP/AI-Agent-Marketplace-Index)|[Pypi](https://pypi.org/project/ai-agent-marketplace/) | [Open Source AI Agent Marketplace DeepNLP](https://www.deepnlp.org/store/ai-agent)
 
 This is the official github repo for pypi package ai_agent_marketplace [https://pypi.org/project/ai-agent-marketplace](https://pypi.org/project/ai-agent-marketplace).
-The repo Open Source AI Agent Marketplace and website [AI Agent Marketplace Store & Search Engine](http://www.deepnlp.org/store/ai-agent) aims to provides a public repo and index of more than 10K+ AI Agent information from 30+ categories in the communities, such as autonomous agent, chatbots, Computer and Mobile phone use agents, robotic agents, and various industries such as business, finance, law, medical or healthcare, etc. The directory are updated to websites from both public repo (github/huggingface) as well as AI Agent services in cloud service provider (Microsoft Azure AWS, Copilot, OpenAI Agent app Store GPT Store, Google Cloud, etc). 
+The repo Open Source AI Agent Marketplace and deepnlp.org website [AI Agent Marketplace Store & Search Engine](http://www.deepnlp.org/store/ai-agent) aims to provides a public repo and index of more than 10K+ AI Agent information from 30+ categories in the communities, such as autonomous agent, chatbots, Computer and Mobile phone use agents, robotic agents, and various industries such as business, finance, law, medical or healthcare, etc. The directory are updated to websites from both public repo (github/huggingface) as well as AI Agent services in cloud service provider (Microsoft Azure AWS, Copilot, OpenAI Agent app Store GPT Store, Google Cloud, etc). 
 
 
 **AI Agent Marketplace Distribution By Category**<br>
 
-<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_agent_marketplace_distribution.jpg" style="height:400px;" alt="AI Agent Marketplace Category">
+<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_agent_marketplace_distribution.png" style="height:600px;" alt="AI Agent Marketplace Category">
 
 We would like to help developers and end users within the lifecycle of AI agent development. From the registration, deployment, Agent router, API calling, metric/traffic tracking, and finally to the stage of moneyterization from your AI Agent. Anyone can submit their AI agents card information, code, APIs, pricing plans to the public registry, just like your submit a paper to arxiv.org and submit models to huggingface.co.
 
