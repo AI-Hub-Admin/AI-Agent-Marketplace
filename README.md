@@ -1,8 +1,15 @@
 # AI Agent Marketplace Index| AI Agent Directory to Host All Available AI Agents | OneKey AI Agent Router | Agent Moneytization
 
+[Github](https://github.com/AI-Agent-Hub/AI-Agent-Marketplace)|[Huggingface](https://huggingface.co/datasets/DeepNLP/AI-Agent-Marketplace-Index)|[Pypi](https://pypi.org/project/ai-agent-marketplace/) | [Open AI Agent Marketplace](https://www.deepnlp.org/store/ai-agent)
+
 This is the official github repo for pypi package ai_agent_marketplace [https://pypi.org/project/ai-agent-marketplace](https://pypi.org/project/ai-agent-marketplace).
 The repo Open AI Agent Marketplace and website [AI Agent Marketplace Store & Search Engine](http://www.deepnlp.org/store/ai-agent) aims to provides a public repo and index of more than 10K+ AI Agent information from 30+ categories in the communities, such as autonomous agent, chatbots, Computer and Mobile phone use agents, robotic agents, and various industries such as business, finance, law, medical or healthcare, etc. The directory are updated to websites from both public repo (github/huggingface) as well as AI Agent services in cloud service provider (Microsoft Azure AWS, Copilot, OpenAI Agent app Store GPT Store, Google Cloud, etc). 
 
+[Dataset on Huggingface](https://huggingface.co/datasets/DeepNLP/AI-Agent-Marketplace-Index)
+
+**AI Agent Marketplace AI Agent Distribution By Category**<br>
+
+<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_agent_marketplace_distribution.jpg" style="height:400px;" alt="AI Agent Marketplace Category">
 
 We would like to help developers and end users within the lifecycle of AI agent development. From the registration, deployment, Agent router, API calling, metric/traffic tracking, and finally to the stage of moneyterization from your AI Agent. Anyone can submit their AI agents card information, code, APIs, pricing plans to the public registry, just like your submit a paper to arxiv.org and submit models to huggingface.co.
 
@@ -19,33 +26,31 @@ graph LR
 
 
 # Main Features
-1. **AI Agent Registry**: You can submit your AI Agent's meta to the [Official AI Agent Marketplace Registry](https://www.deepnlp.org/workspace/my_ai_services) website or using package in python,nodejs, curl, etc method. After registration and approval, community will find your AI Agent in each categories. We also host available submission from open agent store, such as OpenAI Apps SDK, Claude MCPs, etc.
-You can also add pull request to this README.md files of AI agents. 
-2. **AI Agent Search Engine and Search API**: Users are able to search and explore your AI Agent through [AI Agent Search Engine](https://www.deepnlp.org/search/agent) and you can also access the AI Agent Meta Index through [Search API](https://www.deepnlp.org/doc/ai_agent_marketplace) and [MCP servers](https://github.com/AI-Agent-Hub/ai-agent-marketplace-index-mcp)
-3. **OneKey Agent Router**: [OneKey Agent Router](https://www.deepnlp.org/agent/onekey-ai-agent-router) aims to router users' request to your AI Agent or MCPs' registered http APIs using only one access key authentication, which helps users simplify their registration. We initialize a revenue sharing credit plans to help you gain from the free-tier users.
-4. **Traffic Tracking**: Traffic tracking service to your AI Agents, ranging from API calls from the OneKey Router, Google/Bing search engine rankings, 
-5. **Users Genunie Reviews Discussion**: Users can sort the AI Agent meta by reviews, ratings and find good AI Agent of different categories. 
-6. **AI Agent Moneyterization**: Getting AI Agent payment account is not easy, we provides Stripe, Alipay, Creditcard payment methods based on a unified credit charging system and and you can gain credits in your billing account from users' request. You can purchase datasets, call LLM and commercial MCPs (Google Maps, Google Search, etc) and withdraw. 
+1. **AI Agent Registry**: You can submit your AI Agent's meta to the [Official AI Agent Marketplace Registry](https://www.deepnlp.org/workspace/my_ai_services) directly on website or using various methods (python,nodejs, curl, etc). After submitting your AI Agent meta and approval, community will find your AI Agent in each categories. We also host available submission from various agent store or build in any infrastractures, such as OpenAI Apps SDK, Claude MCPs, etc. 
+2. **AI Agent Search Engine and Search API**: Users are able to search and explore your AI Agent through [AI Agent Search Engine](https://www.deepnlp.org/search/agent) and you can also access the AI Agent Meta Index through [Search API](https://www.deepnlp.org/doc/ai_agent_marketplace) and [MCP servers](https://github.com/AI-Agent-Hub/ai-agent-marketplace-index-mcp) also.
+3. **OneKey Agent Router**: [OneKey Agent Router](https://www.deepnlp.org/agent/onekey-ai-agent-router) aims to router users' request to your AI Agent or MCPs' registered http APIs using only one access key authentication, which can help users simplify their registration process. We initialize a OneKey revenue sharing credit plans to help you gain from the free-tier users.
+4. **Traffic Tracking**: Traffic tracking service to your AI Agents, ranging from API calls from the OneKey Router,GitHub Stars,Google/Bing search engine rankings, 
+5. **Users Genunie Reviews & Discussion**: Users can sort the AI Agent meta by reviews, ratings and find good AI Agent of different categories. 
+6. **AI Agent Moneyterization**: Getting payment account for your AI Agent is not easy, we provides Stripe, Alipay, Credit card payment methods based on a unified credit charging system and and you can gain credits in your billing account from users' request. You can purchase datasets, call LLM and commercial MCPs (Google Maps, Google Search, etc) and withdraw. 
 
 
-AI Agent Marketplace and Search Engine
-<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/AI%20Agent%20Marketplace%20Search.jpg" style="height:400px;" alt="AI Agent Marketplace Index and Search">
+**AI Agent Marketplace and Search Engine**<br>
+<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/AI%20Agent%20Marketplace%20Search.jpg" style="height:300px;" alt="AI Agent Marketplace Index and Search">
 
-AI Agent Registration
-<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_agent_registry.jpg" style="height:400px;" alt="AI Agent Registry">
+**AI Agent Registration**<br>
+<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_agent_registry.jpg" style="height:300px;" alt="AI Agent Registry">
 
-Credit System
-<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_agent_credit.jpg" style="height:400px;" alt="AI Agent Registry">
+**Credit System**<br>
+<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_agent_credit.jpg" style="height:300px;" alt="AI Agent Registry">
 
-Traffic Tracking
-<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_search_ranking_chart.jpg" style="height:400px;">
+**Traffic Tracking**<br>
+<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_search_ranking_chart.jpg" style="height:300px;">
 
-OneKey Router 
-<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/onekey_api_router.jpg" style="height:400px;" alt="AI Agent OneKey Router">
+**OneKey Router**<br>
+<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/onekey_api_router.jpg" style="height:300px;" alt="AI Agent OneKey Router">
 
-Users Genunie Reviews
-<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_agent_user_reviews.jpg" style="height:400px;">
-
+**Users Genunie Reviews**<br>
+<img src="https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/docs/ai_agent_user_reviews.jpg" style="height:300px;">
 
 
 ## Short Cut to AI Agent Marketplace Markdown
@@ -58,6 +63,8 @@ Users Genunie Reviews
 1. **AI Agent Registry**
 
 List of Methods 
+
+
 | method | usage |
 | ---- | ---- | 
 | Website | Visit the [official AI Agent registry](https://www.deepnlp.org/workspace/my_ai_services) |
@@ -220,5 +227,4 @@ Can you can find the popular stared Github projects such as:
 #### Contributing
 
 Please contribute to the AGENT.md to include links to your repo.
-
 
