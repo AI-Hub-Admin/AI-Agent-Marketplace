@@ -25,7 +25,7 @@ We would like to help developers and end users within the lifecycle of AI agent 
 5. **Marketplace Domain Verification**: We support subdomain verification for various platforms, such as OpenAI, WeCom, WeChat, DingTalk, etc.
 6. **AI Agent Monetization**: Getting payment account for your AI Agent is not easy, we provides Stripe, Alipay, Credit card payment methods based on a unified credit charging system and and you can gain credits in your billing account from users' request. You can purchase datasets, call LLM and commercial MCPs (Google Maps, Google Search, etc) and withdraw. 
 7. **Dataset for Research**: We provide full snapshot of AI Agent Marketplace dataset periodically back to the community on [Huggingface](https://huggingface.co/datasets/DeepNLP/AI-Agent-Marketplace-Index), so researchers can track the growth.
-8. **Agent Router & Skills Discovery**: OneKey Agent Router is live, Support Various Agent APIs in Skills and API endpoint!
+8. **Agtm**: [Agtm CLI](https://github.com/aiagenta2z/agtm) refers to "agent manager" cli, unifies skill management, agent registration, marketplace search, and provider CLI support, use with Claude Code/Codex/Gemini-CLI.
 
 
 **AI Agent Marketplace and Search Engine**<br>
@@ -54,7 +54,6 @@ We would like to help developers and end users within the lifecycle of AI agent 
 
 
 ## Usage
-
 
 ### 1. **AI Agent A2Z Middleware(Deployment, Host,Payment)**: 
 Deploy your pyhon/nodejs agent/mcp code get free subdomain Live URL `*.aiagaenta2z.com/project`. Get More traffic and earn credit by distribute to communities (OpenAI Apps SDK, Claude MCPs, etc. ) [Doc](https://deepnlp.org/doc/agent_mcp_deployment)
@@ -218,44 +217,26 @@ The unique_id should follow the same /{owerid}/{item-id} format
 See the document for node CLI wrapper at [NPM Agtm package](https://github.com/aiagenta2z/agtm)
 
 
-###  4. **OneKey Agent Router**
+###  4. **OneKey Gateway**
 
-Try Web App of Onekey [API Router Agent](https://agent.deepnlp.org/agent/mcp_tool_use)
+OneKey Gateway now supports use one access key to use 30+ categories commercial APIs, see for [Supported APIs list](https://github.com/aiagenta2z/onekey-gateway). 
+Also, devs can ship their APIs as various agent formats 10x faster, simply register your API to OneKey Agent Gateway and distribute
+as CLIs,Skills,MCPs, etc.
 
-[Agent & MCP Ranking](https://deepnlp.org/agent/rankings)
+Ranking Top Routed [Agent & MCP Ranking](https://deepnlp.org/agent/rankings)
 
-
-```shell
-pip install ai-agent-marketplace
 ```
-#### Python API Usages
+npx onekey agent <unique_id> <api_id> <data_json|@file> [--timeout <ms>]
+npx onekey mcp <server_name> [--name config_name] [--timeout <ms>]
+npx onekey llm --provider <provider> --model <model> --messages <json|@file> [--temperature <num>] [--response-format <format>] [--options <json|@file>] [--timeout <ms>]
+npx onekey llm --payload <json|@file> [--timeout <ms>]
 
-Using Agent Router API from Python Code and related Skills. Generate the [OneKey Router Keys](https://www.deepnlp.org/workspace/keys) here.
-
-```shell
-export DEEPNLP_ONEKEY_ROUTER_ACCESS=BETA_TEST_KEY_MARCH_2026
-```
-
-
-```python
-    import os
-    from ai_agent_marketplace import OneKeyAgentRouter
-    onekey = os.getenv("KEY_DEEPNLP_ONEKEY_ROUTER_ACCESS", "BETA_TEST_KEY_MARCH_2026")
-    agent_router = OneKeyAgentRouter(onekey=onekey)
-    print (f"DEBUG: Connectin to agent_router google-maps")
-    result = agent_router.invoke(
-        unique_id = "google-maps/google-maps",
-        api_id = "maps_directions",
-        data = {
-            "origin": "Boston", "destination": "New York", "mode": "driving"
-        }
-    )
-    print("Google Map Result:", result)
+# examples
+npx onekey agent google-maps/google-maps maps_search_places '{"query":"New York City Italian Restaurants"}'
 ```
 
 
-
-###  5. **Traffic and API Usage Tracking**
+###  5. **Traffic, API Usage Tracking, Moneytization**
 
 ### Key Metrics
 Some of the key metric that DeepNLP AI Agent Marketplace monitors include:
@@ -283,7 +264,6 @@ Bing Search Rank 2.0
 
 - [galaxy.ai](http://www.deepnlp.org/store/ai-agent/email-writing/pub-galaxy-ai/galaxy-ai)
  Bing Search Rank 3.0 
-
 
 ### 6. **Domain Verification**
 
@@ -314,10 +294,9 @@ Please wait a while for the record to work. If you want to change the content, j
 <img src="https://raw.githubusercontent.com/aiagenta2z/ai-agent-marketplace/refs/heads/main/docs/domain_verification_after.png" style="height:400px;" alt="AI Agent Marketplace Category">
 
 
-
 ## Contributing
 
 Please contribute to the AGENT.md to include links and introduction to your repo.
 
 
-
+ 
