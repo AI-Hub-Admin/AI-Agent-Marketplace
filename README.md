@@ -59,39 +59,27 @@ We would like to help developers and end users within the lifecycle of AI agent 
 Deploy your pyhon/nodejs agent/mcp code get free subdomain Live URL `*.aiagaenta2z.com/project`. Get More traffic and earn credit by distribute to communities (OpenAI Apps SDK, Claude MCPs, etc. ) [Doc](https://deepnlp.org/doc/agent_mcp_deployment)
 
 ## Demo Deployed Agent and Apps
-| Live URL                                         | Description                                        | Website                                                                                  |
-|--------------------------------------------------|----------------------------------------------------|------------------------------------------------------------------------------------------|
-| derekzz.aiagenta2z.com/fortune-compass-agent/mcp | A Fortune Telling Agent ChatGPT Apps Deployed Live | [Website](https://deepnlp.org/store/ai-agent/ai-agent/pub-derekzz/fortune-compass-agent) |
-| jjjmc.aiagenta2z.com/perplexity_agent/mcp        | Perplexity API Based Deep Research Agent           | [Website](https://deepnlp.org/store/ai-agent/ai-agent/pub-jjjmc/perplexity_agent)   |
+| Live URL                                                        | Description                                                                                                                                                                                                  | Website                                                                                              |
+|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| derekzz.aiagenta2z.com/fortune-compass-agent/mcp                | A Fortune Telling Agent ChatGPT Apps Deployed Live                                                                                                                                                           | [Website](https://deepnlp.org/store/ai-agent/ai-agent/pub-derekzz/fortune-compass-agent)             |
+| jjjmc.aiagenta2z.com/perplexity_agent/mcp                       | Perplexity API Based Deep Research Agent                                                                                                                                                                     | [Website](https://deepnlp.org/store/ai-agent/ai-agent/pub-jjjmc/perplexity_agent)                    |
+| https://agent.deepnlp.org/agent/craftsman-agent/craftsman-agent | <img src="https://static.aiagenta2z.com/scripts/img/comment/80e65ff34838c544f9560047f34a3834.jpg" alt="Craftsman" width="48" height="48" /> Craftsman-Agent generate Lego/Minecraft/Tesla Car Wrap 3D builds | [GitHub](https://github.com/AI-Hub-Admin/Craftsman-Agent)|[Website](https://deepnlp.org/store/ai-agent/ai-agent/pub-craftsman-agent/craftsman-agent) |
 
 
 ### 2. **AI Agent Registry**
+See detailed Doc [registry.md](docs/ai-agent-marketplace/registry.md) for usage
 
-List of Methods that you can register your AI agent
+List of Methods that you can register your AI agent. Recommended method using the Website and [`agtm`](https://github.com/aiagenta2z/agtm) package.
 
-| method  | usage                                                                                    |
-|---------|------------------------------------------------------------------------------------------| 
-| Website | Visit the [official AI Agent registry](https://www.deepnlp.org/workspace/my_ai_services) |
-| curl    | Support to Submit your Github Repo contents to the marketplace                           |
-| CLI     | Command Line `agtm upload --github` or `agtm upload --config ./agent.json`                                    |
-| python  | Install packages `pip install ai-agent-marketplace`                                      |
-| nodejs  | Install packages  `npm install -g @aiagenta2z/agtm`                                      |
-
-#### Curl 
-
-Best suitable when you already put your AI Agent introduction on github and you can just curl to the registry.
-
-Let's say you want to submit an MCP github repo, we use the markitdown repo for example: https://github.com/microsoft/markitdown.
-
-Firstly, get the keys from [Keys Generation](https://www.deepnlp.org/workspace/keys) generate `AI_AGENT_MARKETPLACE_ACCESS_KEY` as developer.
-
-```
-curl -X POST https://www.deepnlp.org/api/ai_agent_marketplace/registry -H "Content-Type: application/json" -d '{"github":"https://github.com/microsoft/markitdown", "access_key":"{AI_AGENT_MARKETPLACE_ACCESS_KEY}"}' 
-```
-
+| method  | usage                                                                                                                                          |
+|---------|------------------------------------------------------------------------------------------------------------------------------------------------| 
+| Website | Submit and list your AI Agent meta using the website [Submit official AI Agent registry Web](https://www.deepnlp.org/workspace/my_ai_services) |
+| CLI     | Command Line `agtm upload --github` or `agtm upload --config ./agent.json`                                                                     |
+| python  | Install packages `pip install ai-agent-marketplace`                                                                                            |
+| nodejs  | Install packages  `npm install -g @aiagenta2z/agtm`                                                                                            |
 
 #### CLI
-Install the command line using pip or nodejs first, Get access key at [keys](https://www.deepnlp.org/workspace/keys)
+Install the command line using pip or nodejs first, Get access key at [Marketplace API Keys](https://www.deepnlp.org/workspace/keys)
 
 ```
 export AI_AGENT_MARKETPLACE_ACCESS_KEY="{your_access_key}"
@@ -102,120 +90,14 @@ agtm upload --config ./agent.json
 agtm upload --config ./agent.yaml
 ```
 
-Demo examples can be found in ./agent.json or ./agent.yaml
-
-**Setup Your Own Endpoint or Schema**
-
-Please visit the command line github package [agtm](https://github.com/aiagenta2z/agtm) detailed usage
-```
-agtm upload --config ./agent.json --endpoint https://www.example.com --schema ./schema.json
-```
-
-For test API Key, please set variable of AI_AGENT_MARKETPLACE_ACCESS_KEY
-```
-export AI_AGENT_MARKETPLACE_ACCESS_KEY="TEST_KEY_AI_AGENT_REGISTRY"
-```
-
-```
-agtm upload --config ./agent.json --endpoint https://www.deepnlp.org/api/ai_agent_marketplace/registry --schema ./schema.json
-
-# or 
-
-agtm upload --config ./agent.json --endpoint https://www.aiagenta2z.com/api/ai_agent_marketplace/registry --schema ./schema.json
-```
-
-
-#### Python
-
-#####  Install 
-```
-pip install ai-agent-marketplace
-
-```
-
-Get [Keys](https://deepnlp.org/workspace/keys) and Register your AI Agent
-```
-export AI_AGENT_MARKETPLACE_API_KEY={Your API Key}
-```
-
-
-submit your AI Agent 
-```
-import ai_agent_marketplace as aa
-import json
-
-def publish_your_agent():
-    """
-        access_key can be obtained from your personal page:
-        www.deepnlp.orgworkspace/my_ai_services
-        once you submit, it's pending approval and you can track the data then
-        get your access_key from http://www.deepnlp.org/workspace/my_ai_services
-    """
-    access_key = "${your_access_key}"
-    name = "My First AI Agent"
-
-    item_info = {}
-    item_info["content"] = "This AI Agent can do complicated programming work for humans"
-    item_info["website"] = "https://www.my_first_agent.com"
-    item_info["field"] = "AI AGENT"
-    item_info["subfield"] = "Coding Agent"
-    item_info["content_tag_list"] = "coding,python"
-    result = aa.add(access_key=access_key, name="My First Agent", item_info=item_info)
-    url = result["url"] if "url" in result else ""
-    msg = result["msg"] if "msg" in result else ""
-    print ("## DEBUG: AI Agent Marketplace Post msg is|%s" % str(msg))
-    print ("## DEBUG: AI Agent Marketplace Post url is|%s" % str(url))
-
-
-publish_your_agent()
-```
-
-
 ### 3. **AI Agent Search Engine and Search API**:
+See detailed Doc [search.md](docs/ai-agent-marketplace/search.md) for usage
 
-We provides both API and python package wrapper
-
+Example usage
+```shell
+agtm search --q 'coding agent'
+agtm search --id 'google-maps/google-maps'
 ```
-
-import ai_agent_marketplace as aa
-import json
-
-def search_ai_agent_traffic_data():
-
-    result = aa.search(q="Coding Agent Jetbrains")
-    print ("## DEBUG: search result is|%s" % str(result))
-
-    result2 = aa.search(q="Coding Agent", limit=20, timeout=5)
-    print ("## DEBUG: search result is|%s" % str(result2))
-
-    result3 = aa.search(q="", limit=20, timeout=5)
-    print ("## DEBUG: search result is|%s" % str(result3))
-
-search_ai_agent_traffic_data()
-
-```
-
-For example, we use the AI Agent MCP server [Google Maps MCP Servers](https://www.deepnlp.org/store/mcp-server/map/pub-google-maps/google-maps) as example. 
-
-The unique_id should follow the same /{owerid}/{item-id} format
-
-```
-{
-  "unique_id": "google-maps/google-maps",
-  "content_name": "Google Maps MCPs",
-  "content": "Google Maps MCPs provides Location Service to support various APIs..."  
-  "category": "Map",
-  "field": "MCP SERVER",
-  "subfield": "Map",
-  "website": "maps.google.com",
-  "content_tag_list": "official,maps,location",
-  "github": "https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps"
-}
-```
-
-### NodeJs
-See the document for node CLI wrapper at [NPM Agtm package](https://github.com/aiagenta2z/agtm)
-
 
 ###  4. **OneKey Gateway**
 
@@ -236,11 +118,14 @@ npx onekey agent google-maps/google-maps maps_search_places '{"query":"New York 
 ```
 
 
-###  5. **Traffic, API Usage Tracking, Moneytization**
+###  5. **Traffic, API Usage Tracking, Monetization**
+
+For the deployed AI Agent and OneKey Gateway routed API, you can also check your data in [API Dashboard](https://deepnlp.org/workspace/api_dashboard),
+including the APIs requests and credit you consumed, and credits you earn from others people's usage of your deployed AI Agent.
 
 ### Key Metrics
 Some of the key metric that DeepNLP AI Agent Marketplace monitors include:
-
+- API Calling
 - Bing/Google search result ranking
 - IOS Android App Store Ranking
 - Github Repo Ranking
@@ -284,19 +169,15 @@ On the ChatGPT App Manage Page (https://platform.openai.com/apps-manage), you ca
 You need to prepare a MCP Server URL (e.g. https://derekzz.aiagenta2z.com/fortune-compass-agent/mcp) and copy and paste the 
 verification code under the file path (https://derekzz.aiagenta2z.com/.well-known/openai-apps-challenge). 
 
-<img src="https://raw.githubusercontent.com/aiagenta2z/ai-agent-marketplace/refs/heads/main/docs/domain_verification_before.png" style="height:400px;" alt="AI Agent Marketplace Category">
-
 You can go to the `Domain Verification` tab of AI Agent A2Z Deployment (https://deepnlp.org/workspace/deploy) platform.
 
 Fill the form of `openai-apps-challenge` with the code on the platform. Then click `Verify Domain` to add a record.
 Please wait a while for the record to work. If you want to change the content, just add a new record and the content will be overridden.
 
-<img src="https://raw.githubusercontent.com/aiagenta2z/ai-agent-marketplace/refs/heads/main/docs/domain_verification_after.png" style="height:400px;" alt="AI Agent Marketplace Category">
-
-
 ## Contributing
 
-Please contribute to the AGENT.md to include links and introduction to your repo.
+You are welcome to contribute to the AGENT.md to include links and introduction to your AI Agent.
+Please follow the contributing guideline [CONTRIBUTING.md](CONTRIBUTING.md). 
 
 
- 
+
