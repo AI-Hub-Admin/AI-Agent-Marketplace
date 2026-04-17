@@ -3895,7 +3895,51 @@ http://www.deepnlp.org/store/ai-agent/marketing/pub-dydas-com/dydas-com<br>
 </details>
 
 # AI SECURITY AI AGENT
+
+## [AAAA-Nexus](https://atomadic.tech)
+
+AAAA-Nexus: AI agent infrastructure API with 200+ endpoints for trust scoring, RatchetGate session security, on-chain escrow, EU AI Act / NIST compliance, DeFi parameter proofs, VRF gaming, and verifiable randomness. 135-tool MCP server and native x402 micropayments on Base L2.
+<details>
+
+### Website
+https://atomadic.tech
+### Description
+AAAA-Nexus is an AI agent infrastructure API providing 200+ endpoints for autonomous agent systems: trust scoring, RatchetGate session security, on-chain A2A escrow, compliance certification (EU AI Act/NIST/ISO 42001), formally verified DeFi proofs, VRF gaming, and 135-tool MCP server. Native A2A protocol and x402 micropayments on Base L2.
+### Category
+AI Security
+### Tags
+AI SECURITY,AI AGENT PLATFORM,FINANCE,OPERATIONS,AI AGENT
+### Links
+https://atomadic.tech<br>
+https://github.com/AAAA-Nexus/aaaa-nexus-mcp<br>
+https://github.com/atomadictech/aaaa-nexus<br>
+
+</details>
 ## [zania ai](https://zania.ai/)
+
+## [AAAA-Nexus](https://atomadic.tech)
+![thumbnail_picture](https://atomadic.tech/favicon.png)
+
+AAAA-Nexus is an AI agent infrastructure API providing 200+ endpoints for trust scoring, session security, escrow, compliance (EU AI Act/NIST/ISO 42001), DeFi parameter proofs, and verifiable randomness. Native A2A and x402 micropayment support.
+<details>
+
+### Website
+https://atomadic.tech
+### Description
+AAAA-Nexus is an AI agent infrastructure API providing 200+ endpoints for autonomous agent systems: trust scoring, RatchetGate session security, on-chain escrow, compliance certification, DeFi proofs, VRF gaming, and 135-tool MCP server. Native A2A protocol and x402 micropayments on Base L2.
+### Category
+AI Security
+### Tags
+AI SECURITY,AI AGENT PLATFORM,FINANCE,OPERATIONS,AI AGENT
+### Reviews
+[AAAA-Nexus Reviews](https://atomadic.tech)
+### Links
+https://atomadic.tech<br>
+https://github.com/AAAA-Nexus/aaaa-nexus-mcp<br>
+https://github.com/atomadictech/aaaa-nexus<br>
+
+</details>
+
 ![thumbnail_picture](https://th.bing.com/th?id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F&w=32&h=32&qlt=94&pcl=fffffa&o=6&pid=1.2)
 
 Achieve security compliance in minutes with Zania's AI GRC Agents. Automate assessments, and free your team to focus on strategic priorities. Streamline governance, risk, and compliance processes to keep your organization audit-ready.
