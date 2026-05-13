@@ -35883,3 +35883,34 @@ https://achillesalpha.onrender.com/docs<br>
 https://github.com/achilliesbot/execution-protocol<br>
 
 </details>
+
+# Block Lottos Agent Marketing API Guide
+## [Block Lottos Agent Marketing API Guide](https://blocklottos.com/agents.txt)
+![thumbnail_picture](https://blocklottos.com/favicon.ico)
+
+Agent-readable documentation and APIs for autonomous marketing and referral workflows. Block Lottos exposes OpenAPI, public JSON endpoints, llms.txt, agents.txt, and affiliate/referral entry points so bots can discover the service, explain it clearly, and route qualified traffic through API-friendly paths without promoting lottery ticket buying.
+
+<details>
+
+### Website
+https://blocklottos.com/agents.txt
+
+### Description
+Block Lottos Agent Marketing API Guide is a machine-readable resource for AI agents, bots, and automation builders. It focuses on non-ticket services: autonomous marketing, referral/affiliate workflows, public API discovery, and agent-readable documentation. Builders can use the agent guide, OpenAPI specification, API docs, and affiliate page to create bots that explain services, qualify interest, and route users through API-friendly referral paths.
+
+### Category
+Marketing, API, Referral, Autonomous Agents
+
+### Tags
+AI AGENT,AUTONOMOUS MARKETING,REFERRAL API,OPENAPI,BOT MARKETING,LLMS.TXT,AGENTS.TXT
+
+### Reviews
+
+
+### Links
+https://blocklottos.com/agents.txt<br>
+https://blocklottos.com/api-docs<br>
+https://blocklottos.com/openapi.json<br>
+https://blocklottos.com/affiliate<br>
+
+</details>
