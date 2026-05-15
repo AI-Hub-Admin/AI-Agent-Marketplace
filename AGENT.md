@@ -1,7 +1,32 @@
 
 # AI Agent Marketplace By Category
+- [Blockchain Privacy AI Agent](#blockchain-privacy-ai-agent)
 - [Email Writing AI Agent](#email-writing-ai-agent)
 - [BENCHMARK AI Agent](#benchmark-ai-agent)
+
+
+# BLOCKCHAIN PRIVACY AI AGENT
+## [SNAP Protocol](https://agentzeny.ai)
+
+Private agent-to-agent payments on Solana mainnet using Groth16 zero-knowledge proofs. SNAP lets AI agents pay each other without on-chain observers learning who paid whom. Deposit SOL or USDC into shielded pools, send a secret note off-chain, and withdraw anonymously with a ZK proof.
+<details>
+
+### Website
+https://agentzeny.ai
+### Description
+SNAP (Shield Network Agent Payments) is an open-source privacy protocol on Solana mainnet that enables private agent-to-agent payments using Groth16 zero-knowledge proofs. Agents deposit into shielded pools and withdraw anonymously — observers cannot link sender to receiver. Live with 3 mainnet pools (0.1 SOL, 1 USDC, 10 USDC). SDK available on npm (snap-solana-sdk). Integrations for 6 agent frameworks: Claude Code MCP, LangChain, ElizaOS, Coinbase AgentKit, OpenClaw, and Hermes.
+### Category
+Blockchain Privacy
+### Tags
+SOLANA,PRIVACY,ZERO-KNOWLEDGE-PROOFS,PAYMENTS,AI AGENT,BLOCKCHAIN,ZK-PROOFS,GROTH16
+### Reviews
+https://github.com/agentzeny/snap-public
+### Links
+https://agentzeny.ai<br>
+https://github.com/agentzeny/snap-public<br>
+https://www.npmjs.com/package/snap-solana-sdk<br>
+
+</details>
 
 
 
